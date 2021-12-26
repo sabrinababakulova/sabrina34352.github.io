@@ -349,6 +349,22 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#cv {
+    display: block;
+    border: 1px solid #090910;
+    
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #090910;
+    margin: 5% 25%;
+
+}
+
+#cv:hover {
+    box-shadow: inset 0 0 1em 0 wheat;
+}
+
 @media screen and (max-width: 970px) {
     .wrapper {
         font-size: 20px;
