@@ -376,7 +376,10 @@ body {
     display:block;
     border: 1px solid #EAEAEA;
     border-radius: 15px;
-    text-align: right;
+    text-align: center;
+    margin:5% 25%;
+    text-decoration:none;
+    color:#EAEAEA;
 }
 
 @media screen and (max-width: 970px) {
