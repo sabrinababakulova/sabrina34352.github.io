@@ -1,0 +1,390 @@
+@keyframes LoadingPage {
+    0% {
+        opacity: 0;
+        bottom: 40px;
+        position: relative;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0;
+        position: relative;
+    }
+}
+
+@keyframes OPACITYlol {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes MenuDropping {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 75%;
+    }
+}
+#canvas1 {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter:invert(0.8);
+}
+.particles {
+    opacity: 25%;
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    top: 10%;
+    bottom: 10%;
+    right: 10%;
+    overflow: auto;
+    height: 75%;
+    width: 75%;
+    border: 5px solid #EEF2FF;
+    border-radius: 25px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15%;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: MenuDropping 0.3s ease;
+    backdrop-filter: blur(14px);
+
+}
+
+#PhoneVer {
+    text-decoration: none;
+    color: #090910;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+#PhoneVer::after {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+#PhoneVer:hover::after {
+    position: absolute;
+    box-shadow: 0 0 0.3em 0 #EEF2FF, inset 0 0 2em 0 #EEF2FF;
+
+    transition: all 0.3s ease;
+}
+
+#proj {
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding: 5%;
+    margin: 5%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-shadow: 0px 0px 0px 2px black inset;
+
+}
+
+
+
+#ForTheTheme {
+    animation: OPACITYlol 0.5s ease-in;
+}
+
+body {
+    background-color: #F7F7F7;
+    color: #2C272E;
+    font-family: "Century Gothic", sans-serif;
+}
+
+
+::selection {
+    background-color: #090910;
+    color: white;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    background-color: #090910;
+    color: white;
+}
+
+
+
+#ForTheTheme::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 85%, black),
+        url("https://user-images.githubusercontent.com/63979168/147385392-94d1f9f4-c3b2-46cd-a4ba-1e4a0d3cc2eb.png");
+    z-index: -1;
+    filter: invert(0.97);
+    -webkit-filter: invert(97%);
+
+
+}
+
+.header {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    backdrop-filter: invert();
+}
+
+.header a {
+    text-decoration: none;
+    color: #090910;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #F7F7F7;
+    position: relative;
+    z-index: 1;
+
+}
+
+.header a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.header a:hover {
+    background-color: #2C272E;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0.5em 0 white;
+}
+
+
+
+.header a:active {
+    transform: scale(0.95);
+    transition: all 0s ease;
+}
+
+#theme {
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 7px 10px;
+}
+
+
+#theme :hover {
+    filter: invert(1);
+}
+
+.wrapper {
+    text-align: flex-start;
+    font-size: 22px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+}
+
+.main {
+    padding: 3% 2% 20px 0;
+    animation: LoadingPage 0.5s linear alternate;
+}
+
+
+
+
+
+.allprojects {
+    padding: 0 0 100px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 19px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.allprojects a {
+    text-decoration: none;
+    color: #090910;
+    border-radius: 15px;
+    box-shadow: 0 0.1em 0 0 #090910;
+    position: relative;
+}
+
+.allprojects a::after {
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.allprojects a:hover::after {
+    box-shadow: 0 0 0.2em 0.02em #090910;
+    transition: all 0.3s ease-in;
+    font-size: 20px;
+}
+
+
+.title {
+    text-align: center;
+}
+
+#proj img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 0.6em 0 #090910;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.footer {
+    max-width: 1000px;
+    text-align: end;
+    margin: 0 auto;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer img {
+    filter: invert(0.2);
+    margin: 0 15px 0 0;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+    filter: invert(0);
+}
+
+#PreviewOfProjects {
+    text-decoration: none;
+    color: #2C272E;
+    display: grid;
+    margin: 5%;
+    border: 2px solid #2C272E;
+
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    grid-template-columns: 1fr 1fr;
+    overflow-wrap: break-word;
+    position: relative;
+}
+
+#PreviewOfProjects::after {
+    border-radius: 25px;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+#PreviewOfProjects:hover::after {
+    box-shadow: 0 0 0.5em 0 #2C272E;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#webdev {
+    border-radius: 25px;
+    margin: 40px;
+    grid-row: span 2;
+    width: 450px;
+    height: 350px;
+}
+
+#DescriptionOfTechAll {
+    font-size: 19px;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper {
+        font-size: 20px;
+    }
+
+    .education {
+        font-size: 17px;
+    }
+
+    #webdev {
+        border-radius: 15px;
+        margin: 10%;
+        width: 85%;
+        height: 85%;
+    }
+
+    #DescriptionOfTechAll {
+        font-size: 13px;
+    }
+
+    #PreviewOfProjects {
+
+        border: 2px solid #EAEAEA;
+        padding: 0 0 0 3%;
+        border-radius: 15px;
+    }
+
+    #tech4all {
+        font-size: 17px;
+    }
+
+    .allprojects {
+        grid-template-columns: 1fr;
+    }
+
+    #proj {
+        font-size: 15px;
+    }
+}
