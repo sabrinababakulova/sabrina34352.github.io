@@ -377,9 +377,13 @@ body {
     border: 1px solid #EAEAEA;
     border-radius: 15px;
     text-align: center;
-    margin:5% 25%;
-    text-decoration:none;
+    text-decoration: none;
     color:#EAEAEA;
+    margin:5% 25%;
+
+}
+#cv:hover{
+    box-shadow: inset 0 0 1em 0 #EAEAEA;
 }
 
 @media screen and (max-width: 970px) {
