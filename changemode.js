@@ -159,3 +159,9 @@ window.addEventListener('resize', function () {
     canvas.height = innerHeight;
     init();
 });
+
+//adding my signature to the footer last second
+var signature = document.createElement("p");
+signature.innerHTML = "© sabrina babakulova";
+signature.id = "sign";
+footerID.append(signature);
