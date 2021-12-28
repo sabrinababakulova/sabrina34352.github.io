@@ -165,3 +165,5 @@ var signature = document.createElement("p");
 signature.innerHTML = "© sabrina babakulova";
 signature.id = "sign";
 footerID.append(signature);
+
+//scrolling to the csplans if STUFFIMADE is clicked
