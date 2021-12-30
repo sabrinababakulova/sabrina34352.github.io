@@ -131,9 +131,9 @@ function init() {
     particleArray = [];
     for (let i = 0; i < 150; i++) {
         let size = Math.random() * 5;
-        if(window.innerWidth<769){
-            size = Math.random() *3;
-            
+        if (window.innerWidth < 769) {
+            size = Math.random() * 3;
+
         }
         let x = Math.random() * (innerWidth - size * 2);
         let y = Math.random() * (innerHeight - size * 2);
