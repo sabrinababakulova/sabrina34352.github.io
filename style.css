@@ -145,7 +145,7 @@ body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 85%, black),
-        url("https://user-images.githubusercontent.com/63979168/147385392-94d1f9f4-c3b2-46cd-a4ba-1e4a0d3cc2eb.png");
+        url("/4ae4603\ \(2\).png");
     z-index: -1;
     filter: invert(0.97);
     -webkit-filter: invert(97%);

@@ -134,7 +134,7 @@ body {
 #ForTheTheme::after {
     content: "";
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #191A19),
-        url("https://user-images.githubusercontent.com/63979168/147385392-94d1f9f4-c3b2-46cd-a4ba-1e4a0d3cc2eb.png");
+        url("/4ae4603\ \(2\).png");
 
     position: absolute;
     top: 0;
@@ -145,8 +145,8 @@ body {
 }
 
 
-.header {
 
+.header {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
