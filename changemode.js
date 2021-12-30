@@ -45,6 +45,7 @@ holderForMenu.innerHTML = "=";
 
 function MenuDropping() {
     if (Clicked) {
+        
         menu.style.display = "block";
         Clicked = false;
     } else {
@@ -166,4 +167,23 @@ signature.innerHTML = "© sabrina babakulova";
 signature.id = "sign";
 footerID.append(signature);
 
+//if scrolled make menu blurred
+
+window.onscroll = function(e){
+    if(window.scrollY>=60){
+            shit.style.backdropFilter = "invert() blur(10px)";
+
+
+    }
+    else{
+
+        shit.style.backdropFilter = "invert()";
+    }
+    
+}
+
 //scrolling to the csplans if STUFFIMADE is clicked
+
+
+
+
