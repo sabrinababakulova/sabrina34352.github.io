@@ -172,7 +172,7 @@ body {
     padding: 8px 15px;
     cursor: pointer;
     backdrop-filter: invert();
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 .header a {
@@ -336,6 +336,10 @@ body {
     transform: scale(1.1);
     filter: invert(0);
 }
+#Review {
+    color: #090910;
+}
+
 
 #PreviewOfProjects {
     text-decoration: none;

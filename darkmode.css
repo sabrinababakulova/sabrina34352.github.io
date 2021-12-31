@@ -143,11 +143,14 @@ body {
     height: 100%;
     z-index: -1;
 }
+#Review{
+    color:#EEEBDD;
+}
 
-#shit{
-    position:fixed;
+#shit {
+    position: fixed;
     z-index: 1;
-    border:5px solid black;
+    border: 5px solid black;
     min-width: 80%;
     left: 50%;
     transform: translate(-50%, 0);
@@ -162,7 +165,7 @@ body {
     padding: 8px 15px;
     cursor: pointer;
     backdrop-filter: invert();
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 
@@ -359,7 +362,7 @@ body {
     height: 100%;
     width: 100%;
     transition: all 1s linear;
-    
+
 }
 
 #PreviewOfProjects:hover::after {
@@ -370,10 +373,10 @@ body {
 
 #webdev {
     border-radius: 25px;
-    margin:20px;
+    margin: 20px;
     grid-row: span 2;
     grid-column: span 2;
-    width:90%;
+    width: 90%;
 }
 
 #DescriptionOfTechAll {

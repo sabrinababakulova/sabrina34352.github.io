@@ -45,7 +45,7 @@ holderForMenu.innerHTML = "=";
 
 function MenuDropping() {
     if (Clicked) {
-        
+
         menu.style.display = "block";
         Clicked = false;
     } else {
@@ -169,21 +169,16 @@ footerID.append(signature);
 
 //if scrolled make menu blurred
 
-window.onscroll = function(e){
-    if(window.scrollY>=60){
-            shit.style.backdropFilter = "invert() blur(10px)";
+window.onscroll = function (e) {
+    if (window.scrollY >= 60) {
+        shit.style.backdropFilter = "invert() blur(10px)";
 
 
-    }
-    else{
+    } else {
 
         shit.style.backdropFilter = "invert()";
     }
-    
+
 }
 
 //scrolling to the csplans if STUFFIMADE is clicked
-
-
-
-
