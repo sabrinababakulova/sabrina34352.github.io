@@ -24,13 +24,44 @@
 
 @keyframes MenuDropping {
     0% {
-        height: 0;
+        opacity: 0;
+        height: 50%;
+        width: 50%;
+        top: 10%;
+        left: 25%;
     }
 
     100% {
-        height: 75%;
+        opacity: 1;
+        height: 55%;
+        width: 60%;
+        top: 15%;
+        left: 20%;
+
     }
 }
+
+@keyframes MenuGettingBack {
+    0% {
+
+
+        opacity: 1;
+        height: 55%;
+        width: 60%;
+        top: 15%;
+        left: 20%;
+    }
+
+    100% {
+        opacity: 0;
+        height: 50%;
+        width: 50%;
+        top: 10%;
+        left: 25%;
+
+    }
+}
+
 
 #canvas1 {
     content: "";
@@ -50,21 +81,20 @@
     display: none;
     position: fixed;
     z-index: 1;
-    left: 10%;
-    top: 10%;
-    bottom: 10%;
-    right: 10%;
-    overflow: auto;
-    height: 75%;
-    width: 75%;
+    top: 15%;
+    left: 20%;
+    height: 55%;
+    width: 60%;
     border: 5px solid #EEF2FF;
     border-radius: 25px;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     padding-top: 15%;
     background-color: rgba(0, 0, 0, 0.8);
-    animation: MenuDropping 0.3s ease;
+    animation: MenuDropping 0.5s ease;
     backdrop-filter: blur(14px);
+    overflow: hidden;
+
 }
 
 #PhoneVer {
@@ -110,8 +140,8 @@
 
 body {
     background-color: #191A19;
-
     font-family: "Century Gothic", sans-serif;
+
 }
 
 

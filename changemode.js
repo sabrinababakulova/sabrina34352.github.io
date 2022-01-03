@@ -37,7 +37,7 @@ theme.onclick = function () {
 
 //extra menu for mobile phones
 
-let Clicked = true;
+var Clicked = true;
 
 var holderForMenu = document.createElement("a");
 holderForMenu.id = "MenuButton";
@@ -47,9 +47,15 @@ function MenuDropping() {
     if (Clicked) {
 
         menu.style.display = "block";
+        wrapper2.style.filter = "blur(4px)"
+        menu.style.animation = "MenuDropping 0.5s ease"
         Clicked = false;
     } else {
-        menu.style.display = "none";
+        menu.style.animation = "MenuGettingBack 0.5s ease";
+        setTimeout(()=>{
+            menu.style.display = "none";
+        }, 300)
+        wrapper2.style.filter = "none";
         Clicked = true;
     }
 }
@@ -68,12 +74,7 @@ if (window.innerWidth < 769) {
 
     theMenuButton.onclick = MenuDropping;
 
-    window.addEventListener('mouseup', function () {
-        menu.style.display = "none";
-
-    });
 }
-
 
 window.onresize = function () {
 
