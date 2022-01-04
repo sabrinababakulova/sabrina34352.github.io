@@ -125,6 +125,7 @@
 }
 
 #proj {
+    border: 2px solid #2b2b2c;
     border-radius: 30px;
     text-align: center;
     font-size: 20px;
@@ -133,8 +134,25 @@
     margin: 5%;
     background-color: rgba(0, 0, 0, 0.1);
     position: relative;
-    box-shadow: 0px 0px 0px 2px black inset;
+    
 
+}
+
+#proj::after {
+    border-radius: 25px;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+#proj:hover::after {
+    box-shadow: 0 0 0.7em 0 #2b2b2c;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 
@@ -185,17 +203,17 @@ body {
     position: fixed;
     z-index: 1;
     border: 5px solid white;
-    min-width: 80%;
+    min-width: 65%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 .header {
 
-    max-width: 80%;
+    max-width: 65%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 8px 15px;
     cursor: pointer;
@@ -310,7 +328,6 @@ body {
     text-decoration: none;
     color: #090910;
     border-radius: 15px;
-    box-shadow: 0 0.1em 0 0 #090910;
     position: relative;
 }
 
@@ -339,7 +356,6 @@ body {
 #proj img {
     display: block;
     margin: 0 auto;
-    box-shadow: 0 0 0.6em 0 #090910;
     border-radius: 15px;
     width: 100%;
     position: relative;
@@ -386,22 +402,7 @@ body {
     position: relative;
 }
 
-#PreviewOfProjects::after {
-    border-radius: 25px;
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 1s linear;
-}
-
-#PreviewOfProjects:hover::after {
-    box-shadow: 0 0 0.5em 0 #2C272E;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
+        
 
 #webdev {
     border-radius: 25px;
