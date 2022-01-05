@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+    background: linear-gradient(to left, #FF7272, #FFB5B5);
+}
+
+.scene,
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.secret-stuff {
+    border: 2px solid black;
+    position: fixed;
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #700505;
+}
+
+#shit {
+    backdrop-filter: invert(0.3);
+}
+
+@media screen and (max-width: 970px) {
+    .secret-stuff {
+        display: grid;
+        margin: 20% 14% 0 14%;
+        font-size: 10px;
+    }
+}

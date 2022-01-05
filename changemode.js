@@ -52,7 +52,7 @@ function MenuDropping() {
         Clicked = false;
     } else {
         menu.style.animation = "MenuGettingBack 0.5s ease";
-        setTimeout(()=>{
+        setTimeout(() => {
             menu.style.display = "none";
         }, 300)
         wrapper2.style.filter = "none";

@@ -179,8 +179,8 @@ body {
 
 #ForTheTheme::after {
     content: "";
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #191A19),
-        url("/4ae4603\ \(2\).png");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #191A19),
+        url("/4ae4603\ \(2\).png") no-repeat center center/cover;
 
     position: absolute;
     top: 0;
@@ -188,6 +188,17 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+#secret {
+    text-decoration: none;
+    border: 2px solid #ce7f7f;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+
+
 }
 
 #Review {
@@ -513,6 +524,13 @@ body {
 
     .cv {
         font-size: 17px;
+    }
+
+    #secret {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: 20px;
+
     }
 
 }
