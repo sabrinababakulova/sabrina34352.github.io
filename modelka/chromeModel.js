@@ -73,7 +73,14 @@ function init(event) {
         gun.scale.set(0.01, 0.01, 0.01);
 
         gun.position.y += 0.05;
-        animate();
+        const MyPromise = new Promise((resolve, reject) =>{
+            animate();
+            resolve();
+        })
+        MyPromise.then(()=>{
+            let h1 = document.getElementById("visible");
+            h1.style.display="none";
+        })
 
     });
 

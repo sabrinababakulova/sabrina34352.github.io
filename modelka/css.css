@@ -29,6 +29,20 @@ canvas {
     backdrop-filter: invert(0.3);
 }
 
+#visible{
+    display:flex;
+    justify-content: center;
+    padding:40% 0;
+    font-size: 40px;
+    font-family: 'century gothic', sans-serif;
+}
+#visible::after{
+    content:"..."
+}
+
+
+
+
 @media screen and (max-width: 970px) {
     .secret-stuff {
         display: grid;
